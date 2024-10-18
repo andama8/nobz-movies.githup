@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8>
+<meta http=equiv="x=AU=compatible" content="IE=edge">
+<meta name=viewport" content="width"=device-width,intial-scale=1.0">
+<tittle></tittle>
+<link rel="stylesheet" type ="text/css" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<style>
+    label{
+           margin-bottom: 30px;
+    }
+    input,textarea{
+                   padding: 20px;
+                   border: none;
+                   border-radius: 5px;
+                   box-shadow: 0 0 10px(0,0,0,0.1);
+
+    }
+    button[type="submit"]{
+                                background-color: #333;
+                                color: #fff;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+    }
+    button[type="submit"]:hover{
+                                 background-color: #fc0e0e;
+    }
+
+
+
+</style>
+<body>
+    <div class="header">
+<nav>
+    <h2>nobz movie rankinng site</h2>
+    <ul>
+        <li><a href="index.html" class=active>home</a></li>
+        <li><a href="genres.html">genres</a></li>
+        <li><a href="favourate.html">favourate</li>
+            <li><a href="contact us.html">contact</a></li>
+    </ul>
+</nav>
+</div>
+<section>
+    <marquee><h1 style="font-size: 20px; padding: 25px;text-transform: uppercase; text-decoration: underline; font-weight: bold; color: white;" >movie rankinng site</h1></marquee>
+
+</section>
+<article>
+    <h3 style="color: white;"> contact us</h3></style>
+        <form id="contact form">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="name" required><br><br>
+            <label for="message">message</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit">send message</button>
+
+        </form>
+   
+    </article>
+
+
+<div class="footer">
+    <div class="contact">
+        <h3 style="color: white;"> contact us</h3></style>
+         <i><a href="mailto:andamanoberto11@gmail.com">email</a></i>
+        <a href="http://www.facebook.com/king noberto"><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+        <a href="http://wa.me/+256772101431"><i class="fa fa-whatsapp" aria-hidden="true"></i></li> </a> 
+         <a href="http://www.youtube.com/www.youtube.com/noberto genius"><i class="fa fa-youtube" aria-hidden="true"></i></li></a>
+    </div>
+    <div class="mrp">
+        <h2>movie links</h2>
+        <ul>
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="genres.html">genres</a></li>
+            <li><a href="favourate.html">favourate</a></li>
+            <li><a href="contact us.html">contact us</a></li>
+        </ul>
+    </div>
+    <div>
+        <p style="float:right;text-transform: capitalize;font-family: 'Times New Roman', Times, serif;color: white;"> developed  by andama nobért +256772101431/+256770524233</p>
+    </div>
+<div class="news">
+    <form id="contact form">
+        <label for="email">subcribe to our newsletter</label>
+        <input type="email" id="email" name="name" required placeholder="email">
+        <button type="submit">send message</button>
+    </form>
+    <p style=" text-align: center; ">&copy;2024 nobz movie rankinng site  all right reserved</p>
+
+</div>
+</div>
+<script>
+    const form=document.getElementById('contact-form');
+    form.addEventListener('submit'),(e)=>{
+        e.preventdefault();
+        const name=document.getElementById('name').value;
+        const email=document.getElementById('email').value;
+        const message=document.getElementById('message').value;
+        //vaidate form data
+        if(!name||!email||!message)
+        alert('please fill out all field.');
+    return;
+    }
+
+</script>
+</body>
+</html>
